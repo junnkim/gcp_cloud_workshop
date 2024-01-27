@@ -77,15 +77,18 @@ You will be promoted to a google account to use and you will need to create a go
    ```
 
 
-
-
-
 ## Add a Firewall Rule <a name="firewall-rule"></a>
-  	
+
+Navigate to the Firewall page by typying 'Firewall' in the search bar: 
+
+<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/5b667f74-8ece-4faf-ace0-95b7b9b4d93d" width="700" height="300">
+
 3. Create firewall rule: 
-   * Name: my_UCLA_team_name -firewall Targets: Specified target tags Target tags: my-UCLA-team-name-tag Source filter: IPv4 ranges 
-   * Set the Source IPv4 ranges to 0.0.0.0/0, which allows traffic from any source. 
-   * For specified protocols and ports, select TCP and enter 80. 
+   * **Name:** my_UCLA_team_name
+   * **-firewall Targets:** Specified target tags Target tags: my-UCLA-team-name-tag
+   * **Source filter:** IPv4 ranges 
+   * Set the **Source IPv4 ranges** to 0.0.0.0/0, which allows traffic from any source. 
+   * For specified protocols and ports, select **TCP** and enter **80**. 
    * NOTE: It may take a few minutes for the Console to display the new firewall rule or refresh to see the rule. 
 
 
