@@ -36,7 +36,7 @@ After clicking on enable, you will need to activate your billing account:
 
 Once complete, you will see the Compute Engine homepage:
 
-<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/0ac9d549-7023-4157-9b4e-d92f320f9c11" width="900" height="300">
+<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/0ac9d549-7023-4157-9b4e-d92f320f9c11" width="700" height="300">
 
 ## Create Two Compute Instances to Server as Your Target Pool <a name="compute-instances"></a>
 
