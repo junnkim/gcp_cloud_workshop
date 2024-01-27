@@ -12,8 +12,7 @@ Creating a GCP account is simple. Just click on this [link](https://cloud.google
  
 You will be promoted to a google account to use and you will need to create a google account if you do not already have one. Once complete, you will be taken to the GCP home page: 
 
-![gcp page](https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/d2f78299-2791-44fc-9d19-f9e0c22f6cc9)
-
+<img src="[https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/5d03bc81-dfe3-4f7d-9d01-a475e7eeda1a](https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/d2f78299-2791-44fc-9d19-f9e0c22f6cc9)" width="700" height="400">
 ### Important Points to Note About Your Free GCP Account
 
 •  Each resource you create in your account will incur costs. 
