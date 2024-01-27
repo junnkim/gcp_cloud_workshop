@@ -1,10 +1,11 @@
 # Introduction to Google Cloud Platform (GCP)
-This document contains instructions on how to complete the GCP lab assignment. 
+This document contains instructions on how to complete an introductory GCP lab. 
 
 # Table of Contents
 1. [Background and Requirements](#background-and-requirements)
 2. [Create Two Compute Instances to Server as Your Target Pool](#compute-instances)
 3. [Add a Firewall Rule](#firewall-rule)
+4. [Create the Load Balancer](#load-balancer)
    
 ## Background and Requirements <a name="background-and-requirements"></a>
 
@@ -12,7 +13,7 @@ Welcome! This lab will introduce you to the basics of GCP with a focus on naviga
 
 Creating a GCP account is simple. Just click on this [link](https://cloud.google.com/free?utm_source=google&utm_medium=cpc&utm_campaign=na-US-all-en-dr-bkws-all-all-trial-e-dr-1707554&utm_content=text-ad-none-any-DEV_c-CRE_665665924741-ADGP_Hybrid+%7C+BKWS+-+MIX+%7C+Txt_Google+Cloud+Free-KWID_43700078974895982-aud-2201603469980:kwd-886545049102&utm_term=KW_gcp+free+account-ST_gcp+free+account&gad_source=1&gclid=CjwKCAiA8NKtBhBtEiwAq5aX2LjLxVpWNJxm1DV34_Fz6LOdgQyXfP4Qs-sKk1JPU_1lLVKAbcSHzRoC378QAvD_BwE&gclsrc=aw.ds&authuser=1) and select **Get started for free**
 
-<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/5d03bc81-dfe3-4f7d-9d01-a475e7eeda1a" width="400" height="300">
+<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/5d03bc81-dfe3-4f7d-9d01-a475e7eeda1a" width="400" height="200">
 
 You will be promoted to a google account to use and you will need to create a google account if you do not already have one. Once complete, you will be taken to the GCP home page: 
 
@@ -88,7 +89,7 @@ You will be promoted to a google account to use and you will need to create a go
    * NOTE: It may take a few minutes for the Console to display the new firewall rule or refresh to see the rule. 
 
 
-## Security
+## Create the Load Balancer <a name="load-balancer"></a>
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
 
