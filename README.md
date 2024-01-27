@@ -3,6 +3,7 @@ This document contains instructions on how to complete the GCP lab assignment.
 
 # Table of Contents
 1. [Background and Requirements](#background-and-requirements)
+2. [Create Two Compute Instances to Server as Your Target Pool](#compute-instances)
 
    
 ## Background and Requirements <a name="background-and-requirements"></a>
@@ -37,7 +38,7 @@ Once complete, you will see the Compute Engine homepage:
 
 <img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/0ac9d549-7023-4157-9b4e-d92f320f9c11" width="900" height="300">
 
-## Create Two Compute Instances to Server as Your Target Pool
+## Create Two Compute Instances to Server as Your Target Pool <a name="compute-instances"></a>
 
 ### Instance 1 
 1. Go to Compute Engine to create instance:
