@@ -9,10 +9,10 @@ Creating a GCP account is simple. Just click on this [link](https://cloud.google
 
 <img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/5d03bc81-dfe3-4f7d-9d01-a475e7eeda1a" width="700" height="400">
 
- 
 You will be promoted to a google account to use and you will need to create a google account if you do not already have one. Once complete, you will be taken to the GCP home page: 
 
 <img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/d2f78299-2791-44fc-9d19-f9e0c22f6cc9" width="700" height="400">
+
 ### Important Points to Note About Your Free GCP Account
 
 •  Each resource you create in your account will incur costs. 
@@ -23,16 +23,15 @@ You will be promoted to a google account to use and you will need to create a go
 
 •  To search for different services, such the **Compute Instance** service, just the search bar located at the top of the GCP console. You will be taken to that services hompage. Once there, you will need to enable the service:
 
-![compute engine](https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/fef5dbde-517f-4f35-86ab-0715a31e3a88)
+<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/fef5dbde-517f-4f35-86ab-0715a31e3a88" width="700" height="400">
 
 After clicking on enable, you will need to activate your billing account:
 
-![billing](https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/edab95bf-1126-4ca0-bb02-5c2ccc6de550)
+<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/edab95bf-1126-4ca0-bb02-5c2ccc6de550" width="700" height="400">
 
 Once complete, you will see the Compute Engine homepage:
 
-![compute homepage](https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/0ac9d549-7023-4157-9b4e-d92f320f9c11)
-
+<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/0ac9d549-7023-4157-9b4e-d92f320f9c11" width="700" height="400">
 
 ## Create Two Compute Instances to Server as Your Target Pool
 
