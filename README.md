@@ -81,8 +81,7 @@ You will be promoted to a google account to use and you will need to create a go
 
 Navigate to the Firewall page by typying 'Firewall' in the search bar: 
 
-<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/5b667f74-8ece-4faf-ace0-95b7b9b4d93d" width="600" height="300">
-
+<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/fbd4a788-1183-4d6e-bd13-dc5e213691be" width="600" height="300">
 
 3. Create firewall rule: 
    * **Name:** my_UCLA_team_name
