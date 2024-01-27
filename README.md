@@ -30,11 +30,11 @@ You will be promoted to a google account to use and you will need to create a go
 
 <img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/fef5dbde-517f-4f35-86ab-0715a31e3a88" width="400" height="200">
 
-After clicking on enable, you will need to activate your billing account:
+•   After clicking on enable, you will need to activate your billing account:
 
 <img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/edab95bf-1126-4ca0-bb02-5c2ccc6de550" width="400" height="200">
 
-Once complete, you will see the Compute Engine homepage:
+•   Once complete, you will see the Compute Engine homepage:
 
 <img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/0ac9d549-7023-4157-9b4e-d92f320f9c11" width="700" height="300">
 
