@@ -1,18 +1,18 @@
 # Introduction to Google Cloud Platform (GCP)
 This document contains instructions on how to complete the GCP lab assignment. 
 
-## Integrating AWS Lambda with SMB file shares
+## Background
 
-[Read the post](https://aws.amazon.com/blogs/storage/enabling-smb-access-for-serverless-workloads/) on AWS Storage blog.
+This lab will introduce you to the basics of Google Cloud Platform (GCP). 
 
 ### Create Two Compute Instances to Server as Your Target Pool
-•	Go to Compute Engine to create instance: 
-  •	Name: my-UCLA-team-name-1 
-  •	Region: us-central1 
-  •	Zone: us-central1-b 
-  •	OS image Debian GNU/Linux 
-  •	Add a networking tag of my_UCLA_team_name-tag. 
-  • Paste this startup script: 
+1. Go to Compute Engine to create instance:
+   * Name: my-UCLA-team-name-1 
+   * Region: us-central1 
+   * Zone: us-central1-b 
+   * OS image Debian GNU/Linux 
+   * Add a networking tag of my_UCLA_team_name-tag. 
+   * Paste this startup script: 
 
   ```bash
   #! /bin/bash 
