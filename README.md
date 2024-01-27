@@ -4,7 +4,7 @@ This document contains instructions on how to complete the GCP lab assignment.
 # Table of Contents
 1. [Background and Requirements](#background-and-requirements)
 2. [Create Two Compute Instances to Server as Your Target Pool](#compute-instances)
-
+3. [Add a Firewall Rule](#firewall-rule)
    
 ## Background and Requirements <a name="background-and-requirements"></a>
 
@@ -40,7 +40,7 @@ Once complete, you will see the Compute Engine homepage:
 
 ## Create Two Compute Instances to Server as Your Target Pool <a name="compute-instances"></a>
 
-### Instance 1 
+#### Instance 1 
 1. Go to Compute Engine to create instance:
    * **Name:** my-UCLA-team-name-1 
    * **Region:** us-central1 
@@ -57,16 +57,30 @@ Once complete, you will see the Compute Engine homepage:
   echo '<!doctypehtml><html><body><h1>my-UCLA-team-name-1</h1></body></html>' | tee var/www/html/index.html
   ```
 
-### Instance 2
+#### Instance 2
+
+2. Go to Compute Engine to create instance:
+   * **Name:** my-UCLA-team-name-2 
+   * **Region:** us-central1 
+   * **Zone:** us-central1-b 
+   * **OS image:** Debian GNU/Linux 
+   * Add a networking tag of **my_UCLA_team_name-tag.** 
+   * Paste this startup script: 
+
+  ```bash
+  #! /bin/bash 
+  sudo apt-get update 
+  sudo apt-get install apache2 -y 
+  sudo service apache2 restart 
+  echo '<!doctypehtml><html><body><h1> my-UCLA-team-name-2</h1></body></html>' | tee /var/www/html/index.html 
+   ```
 
 
 
 
 
+## Add a Firewall Rule <a name="firewall-rule"></a>
 
-
-
-#### Deployment steps
 1.	Navigate to the cloned repo directory, or run `sam init` then choose ‘Custom Template Location’ and paste the repo URL.
 2.	Build the AWS SAM application, replace <templateName> with Python or DotNet template:
     
