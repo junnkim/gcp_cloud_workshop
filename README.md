@@ -3,7 +3,6 @@ This document contains instructions on how to complete the GCP lab assignment.
 
 # Table of Contents
 1. [Background and Requirements](#Background and Requirements)
-2. [Create Two Compute Instances to Server as Your Target Pool](##Create Two Compute Instances to Server as Your Target Pool)
 
    
 ## Background and Requirements <a name="Background and Requirements"></a>
