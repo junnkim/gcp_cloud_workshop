@@ -15,10 +15,10 @@ You will be promoted to a google account to use and you will need to create a go
 
 ### Important Points to Note About Your Free GCP Account
 
-•	Each resource you create in your account will incur costs. 
-• GCP gives you a $300 dollar credit and UCLA will provide an additional $50 credit to allow you to experiment with different cloud services
-• All GCP resources are created in a project. Your account comes with a default project called **My Project** that you can use
-• To search for different services, such the **Compute Instance** service, just the search bar located at the top of the GCP console
+•  Each resource you create in your account will incur costs. 
+•  GCP gives you a $300 dollar credit and UCLA will provide an additional $50 credit to allow you to experiment with different cloud services
+•  All GCP resources are created in a project. Your account comes with a default project called **My Project** that you can use
+•  To search for different services, such the **Compute Instance** service, just the search bar located at the top of the GCP console
 
 ## Create Two Compute Instances to Server as Your Target Pool
 
