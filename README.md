@@ -2,10 +2,10 @@
 This document contains instructions on how to complete the GCP lab assignment. 
 
 # Table of Contents
-1. [Background and Requirements](#Background and Requirements)
+1. [Background and Requirements](#background-and-requirements)
 
    
-## Background and Requirements <a name="Background and Requirements"></a>
+## Background and Requirements <a name="background-and-requirements"></a>
 
 Welcome! This lab will introduce you to the basics of GCP with a focus on navigating and creating services through the GCP Console. To successfully complete this lab, you will need to create your own personal GCP account. 
 
