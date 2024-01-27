@@ -80,15 +80,12 @@ Once complete, you will see the Compute Engine homepage:
 
 
 ## Add a Firewall Rule <a name="firewall-rule"></a>
-
-1.	Navigate to the cloned repo directory, or run `sam init` then choose ‘Custom Template Location’ and paste the repo URL.
-2.	Build the AWS SAM application, replace <templateName> with Python or DotNet template:
-    
-    `sam build -t <templateName>`
-
-3.	Deploy the AWS SAM application:
-    
-    `sam deploy –guided`
+  	
+3. Create firewall rule: 
+   * Name: my_UCLA_team_name -firewall Targets: Specified target tags Target tags: my-UCLA-team-name-tag Source filter: IPv4 ranges 
+   * Set the Source IPv4 ranges to 0.0.0.0/0, which allows traffic from any source. 
+   * For specified protocols and ports, select TCP and enter 80. 
+   * NOTE: It may take a few minutes for the Console to display the new firewall rule or refresh to see the rule. 
 
 
 ## Security
