@@ -23,7 +23,7 @@ You will be promoted to a google account to use and you will need to create a go
 
 •  To search for different services, such the **Compute Instance** service, just the search bar located at the top of the GCP console. You will be taken to that services hompage. Once there, you will need to enable the service:
 
-<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/fef5dbde-517f-4f35-86ab-0715a31e3a88" width="900" height="300">
+<img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/fef5dbde-517f-4f35-86ab-0715a31e3a88" width="400" height="200">
 
 After clicking on enable, you will need to activate your billing account:
 
