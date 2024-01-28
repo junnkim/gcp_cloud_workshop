@@ -6,6 +6,7 @@ This document contains instructions on how to complete an introductory GCP lab.
 2. [Create Two Compute Instances to Server as Your Target Pool](#compute-instances)
 3. [Add a Firewall Rule](#firewall-rule)
 4. [Create the Load Balancer](#load-balancer)
+5. [Send Traffic to Your Compute Instances (#send-traffic)
    
 ## Background and Requirements <a name="background-and-requirements"></a>
 
@@ -96,9 +97,39 @@ Navigate to the Firewall page by typying 'Firewall' in the search bar:
 
 ## Create the Load Balancer <a name="load-balancer"></a>
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+* Click the Navigation menu, located in the top left-hand side.
+* Select Network services > Load balancing.
+* Click Create Load Balancer.
+* Click Start Configuration for the TCP Load Balancing option.
+* Select From Internet to my VMs.
+* Select Single region only.
+* Select Target Pool or Target Instance.
+* Click Continue.
+* Enter the following information: Name: my_UCLA_team_name-lb Region: us-central1 (Iowa)
+* Select Backend configuration.
+* Click Select Existing Instances.
+* For VM instances, select my-UCLA-team-name-1(us-central1-b) and my-UCLA-team-name-2(us-central1-b). Click OK.
+* Select Frontend configuration.
+* For Name, enter my-UCLA-team-name-fe.
+* For IP address, select Create IP Address.
+* In the Reserve a new static IP address dialog, enter my-UCLA-team-name-ip for the Name.
+* Click Reserve.
+* For Port, enter 80.
+* Click Done.
+* Click Review and finalize (optional).
+* Click Create.
+* Click the my-UCLA-team-name-lb, then choose EDIT.
+* Under the Backend configuration in the Health check section, choose CREATE A HEALTH CHECK.
+* Enter the following information: Name: health Protocol: HTTP Port: 80.
+* Keep the given defaults for Health criteria.
+* Click Save.
+* Click UPDATE.
+* Click UPDATE LOAD BALANCER 
 
-## License
+## Send Traffic to Your Compute Instances <a name="send-traffic"></a>
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+a. Copy the IP address and place it in the URL, you will then see either my-UCLA-team-name-1 or my-UCLA-team-name-2 displayed. This will confirm your traffic is being served the instance webpages. 
+
+b. Open Cloud Shell and execute command while true; do curl -m1 IP_ADDRESS; done. This will show that both of your servers are serving the application traffic to your end users. 
+
 
