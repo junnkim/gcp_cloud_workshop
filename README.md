@@ -16,7 +16,7 @@ Creating a GCP account is simple. Just click on this [link](https://cloud.google
 
 <img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/5d03bc81-dfe3-4f7d-9d01-a475e7eeda1a" width="400" height="200">
 
-You will be promoted to a google account to use and you will need to create a google account if you do not already have one. Once complete, you will be taken to the GCP home page: 
+You will be prompted to create a google account to use, and you will need to create a google account if you do not already have one. Once complete, you will be taken to the GCP home page: 
 
 <img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/d2f78299-2791-44fc-9d19-f9e0c22f6cc9" width="600" height="300">
 
@@ -24,9 +24,9 @@ You will be promoted to a google account to use and you will need to create a go
 
 •  Each resource you create in your account will incur costs. 
 
-•  GCP gives you a $300 dollar credit and UCLA will provide an additional $50 credit to allow you to experiment with different cloud services
+•  GCP gives you a $300 dollar credit and UCLA will provide an additional $50 credit to allow you to experiment with different cloud services.
 
-•  All GCP resources are created in a project. Your account comes with a default project called **My Project** that you can use
+•  All GCP resources are created in a project. Your account comes with a default project called **My Project** that you can use.
 
 •  To search for different services, such the **Compute Instance** service, just the search bar located at the top of the GCP console. You will be taken to that services hompage. Once there, you will need to enable the service:
 
