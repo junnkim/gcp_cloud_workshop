@@ -8,7 +8,7 @@ This document contains instructions on how to complete an introductory GCP lab.
 4. [Create the Load Balancer](#load-balancer)
 5. [Send Traffic to Your Compute Instances](#send-traffic)
    
-## Background and Requirements <a name="background-and-requirements"></a>
+## 1. Background and Requirements <a name="background-and-requirements"></a>
 
 Welcome! This lab will introduce you to the basics of GCP with a focus on navigating and creating services through the GCP Console. To successfully complete this lab, you will need to create your own personal GCP account. 
 
@@ -40,7 +40,7 @@ You will be promoted to a google account to use and you will need to create a go
 
 <img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/0ac9d549-7023-4157-9b4e-d92f320f9c11" width="700" height="300">
 
-## Create Two Compute Instances to Server as Your Target Pool <a name="compute-instances"></a>
+## 2. Create Two Compute Instances to Server as Your Target Pool <a name="compute-instances"></a>
 
 #### Instance 1 
 1. Go to Compute Engine to create instance:
@@ -78,7 +78,7 @@ You will be promoted to a google account to use and you will need to create a go
    ```
 
 
-## Add a Firewall Rule <a name="firewall-rule"></a>
+## 3. Add a Firewall Rule <a name="firewall-rule"></a>
 
 Navigate to the Firewall page by typying 'Firewall' in the search bar: 
 
@@ -95,7 +95,7 @@ Navigate to the Firewall page by typying 'Firewall' in the search bar:
    * NOTE: It may take a few minutes for the Console to display the new firewall rule or refresh to see the rule. 
 
 
-## Create the Load Balancer <a name="load-balancer"></a>
+## 4. Create the Load Balancer <a name="load-balancer"></a>
 
 * Click the Navigation menu, located in the top left-hand side.
 * Select Network services > Load balancing.
@@ -126,7 +126,7 @@ Navigate to the Firewall page by typying 'Firewall' in the search bar:
 * Click UPDATE.
 * Click UPDATE LOAD BALANCER 
 
-## Send Traffic to Your Compute Instances <a name="send-traffic"></a>
+## 5. Send Traffic to Your Compute Instances <a name="send-traffic"></a>
 
 a. Copy the IP address and place it in the URL, you will then see either my-UCLA-team-name-1 or my-UCLA-team-name-2 displayed. This will confirm your traffic is being served the instance webpages. 
 
