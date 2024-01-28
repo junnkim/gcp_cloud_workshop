@@ -43,13 +43,13 @@ You will be prompted to create a google account to use, and you will need to cre
 ## 2. Create Two Compute Instances to Server as Your Target Pool <a name="compute-instances"></a>
 
 #### Instance 1 
-1. Go to Compute Engine to create instance:
+1. Go to Compute Engine to create instance. Keep all the default settings selected and only change the following:
    * **Name:** my-ucla-team-name-1 
    * **Region:** us-central1 
    * **Zone:** us-central1-b 
    * **OS image:** Debian GNU/Linux 
    * Add a networking tag of **my_ucla_team_name-tag.** 
-   * Paste this startup script: 
+   * Under **Advanced Options**, **Management**, paste this startup script under the **Automation** section: 
 
   ```bash
   #! /bin/bash 
@@ -61,13 +61,13 @@ You will be prompted to create a google account to use, and you will need to cre
 
 #### Instance 2
 
-2. Go to Compute Engine to create instance:
+2. Go to Compute Engine to create instance. Keep all the default settings selected and only change the following:
    * **Name:** my-ucla-team-name-2 
    * **Region:** us-central1 
    * **Zone:** us-central1-b 
    * **OS image:** Debian GNU/Linux 
    * Add a networking tag of **my_ucla_team_name-tag** 
-   * Paste this startup script: 
+   * Under **Advanced Options**, **Management**, paste this startup script under the **Automation** section: 
 
   ```bash
   #! /bin/bash 
