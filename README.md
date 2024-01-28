@@ -43,11 +43,11 @@ You will be promoted to a google account to use and you will need to create a go
 
 #### Instance 1 
 1. Go to Compute Engine to create instance:
-   * **Name:** my-UCLA-team-name-1 
+   * **Name:** my-ucla-team-name-1 
    * **Region:** us-central1 
    * **Zone:** us-central1-b 
    * **OS image:** Debian GNU/Linux 
-   * Add a networking tag of **my_UCLA_team_name-tag.** 
+   * Add a networking tag of **my_ucla_team_name-tag.** 
    * Paste this startup script: 
 
   ```bash
@@ -61,11 +61,11 @@ You will be promoted to a google account to use and you will need to create a go
 #### Instance 2
 
 2. Go to Compute Engine to create instance:
-   * **Name:** my-UCLA-team-name-2 
+   * **Name:** my-ucla-team-name-2 
    * **Region:** us-central1 
    * **Zone:** us-central1-b 
    * **OS image:** Debian GNU/Linux 
-   * Add a networking tag of **my_UCLA_team_name-tag.** 
+   * Add a networking tag of **my_ucla_team_name-tag** 
    * Paste this startup script: 
 
   ```bash
