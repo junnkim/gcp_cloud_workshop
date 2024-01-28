@@ -6,7 +6,7 @@ This document contains instructions on how to complete an introductory GCP lab.
 2. [Create Two Compute Instances to Server as Your Target Pool](#compute-instances)
 3. [Add a Firewall Rule](#firewall-rule)
 4. [Create the Load Balancer](#load-balancer)
-5. [Send Traffic to Your Compute Instances (#send-traffic)
+5. [Send Traffic to Your Compute Instances] (#send-traffic)
    
 ## Background and Requirements <a name="background-and-requirements"></a>
 
