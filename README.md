@@ -1,5 +1,5 @@
 # Introduction to Google Cloud Platform (GCP)
-This document contains instructions on how to complete an introductory GCP lab. 
+This document contains instructions on how to complete the introductory GCP lab. 
 
 ## Table of Contents
 1. [Background and Requirements](#background-and-requirements)
