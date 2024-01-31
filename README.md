@@ -3,7 +3,7 @@ This document contains instructions on how to complete the introductory GCP lab.
 
 ## Table of Contents
 1. [Background and Requirements](#background-and-requirements)
-2. [Create Two Compute Instances to Server as Your Target Pool](#compute-instances)
+2. [Create Two Compute Instances to Serve as Your Target Pool](#compute-instances)
 3. [Add a Firewall Rule](#firewall-rule)
 4. [Create the Load Balancer](#load-balancer)
 5. [Send Traffic to Your Compute Instances](#send-traffic)
@@ -40,15 +40,15 @@ You will be prompted to create a google account to use, and you will need to cre
 
 <img src="https://github.com/junnkim/gcp_cloud_workshop/assets/104690669/0ac9d549-7023-4157-9b4e-d92f320f9c11" width="700" height="300">
 
-## 2. Create Two Compute Instances to Server as Your Target Pool <a name="compute-instances"></a>
+## 2. Create Two Compute Instances to Serve as Your Target Pool <a name="compute-instances"></a>
 
 #### Instance 1 
 1. Go to Compute Engine to create instance. Keep all the default settings selected and only change the following:
-   * **Name:** my-ucla-team-name-1 
+   * **Name:** my-ucla-instance-1
    * **Region:** us-central1 
    * **Zone:** us-central1-b 
    * **OS image:** Debian GNU/Linux 
-   * Add a networking tag of **my_ucla_team_name-tag.** 
+   * Add a networking tag of **my_ucla_name-tag** 
    * Under **Advanced Options**, **Management**, paste this startup script under the **Automation** section: 
 
   ```bash
@@ -56,13 +56,13 @@ You will be prompted to create a google account to use, and you will need to cre
   sudo apt-get update 
   sudo apt-get install apache2 -y 
   sudo service apache2 restart 
-  echo '<!doctypehtml><html><body><h1>my-UCLA-team-name-1</h1></body></html>' | tee var/www/html/index.html
+  echo '<!doctypehtml><html><body><h1>Hello! You've reached the first UCLA instance!</h1></body></html>' | tee var/www/html/index.html
   ```
 
 #### Instance 2
 
 2. Go to Compute Engine to create instance. Keep all the default settings selected and only change the following:
-   * **Name:** my-ucla-team-name-2 
+   * **Name:** my-ucla-instance-2 
    * **Region:** us-central1 
    * **Zone:** us-central1-b 
    * **OS image:** Debian GNU/Linux 
@@ -74,7 +74,7 @@ You will be prompted to create a google account to use, and you will need to cre
   sudo apt-get update 
   sudo apt-get install apache2 -y 
   sudo service apache2 restart 
-  echo '<!doctypehtml><html><body><h1> my-UCLA-team-name-2</h1></body></html>' | tee /var/www/html/index.html 
+  echo '<!doctypehtml><html><body><h1>Hello! You've reached the second UCLA instance!</h1></body></html>' | tee /var/www/html/index.html 
    ```
 
 
