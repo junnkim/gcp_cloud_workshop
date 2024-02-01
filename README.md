@@ -136,4 +136,6 @@ a. Copy the IP address and place it in the URL, you will then see either **"go-b
 
 b. Open Cloud Shell and execute command while true; do curl -m1 IP_ADDRESS; done. This will show that both of your servers are serving the application traffic to your end users. 
 
+## 6. Delete the GCP Services (After Lab is Complete)<a name="delete-resources"></a>
 
+Once the lab assignment is complete, you will want to delete the resources you just created to avoid incurring costs. In this lab, we created 2 GCP Compute Intances, 1 GCP Firewall Rule and 1 GCP Load Balancer. Navigate to each of those services and select the option to delete each one. 
