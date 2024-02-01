@@ -7,7 +7,8 @@ This document contains instructions on how to complete the introductory GCP lab.
 3. [Add a Firewall Rule](#firewall-rule)
 4. [Create the Load Balancer](#load-balancer)
 5. [Send Traffic to Your Compute Instances](#send-traffic)
-   
+6. [Delete the GCP Services](#delete-resources)
+
 ## 1. Background and Requirements <a name="background-and-requirements"></a>
 
 Welcome! This lab will introduce you to the basics of GCP with a focus on navigating and creating services through the GCP Console. To successfully complete this lab, you will need to create your own personal GCP account. 
