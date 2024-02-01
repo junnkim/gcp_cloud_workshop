@@ -48,15 +48,16 @@ You will be prompted to create a google account to use, and you will need to cre
    * **Region:** us-central1 
    * **Zone:** us-central1-b 
    * **OS image:** Debian GNU/Linux 
-   * Add a networking tag of **my_ucla_name-tag** 
+   * Under **Advanced Options**, **Networking**, add a networking tag of **my_ucla_name_tag** under the Network tags section
    * Under **Advanced Options**, **Management**, paste this startup script under the **Automation** section: 
 
   ```bash
-  #! /bin/bash 
-  sudo apt-get update 
-  sudo apt-get install apache2 -y 
-  sudo service apache2 restart 
-  echo '<!doctypehtml><html><body><h1>Hello! You've reached the first UCLA instance!</h1></body></html>' | tee var/www/html/index.html
+   #! /bin/bash
+   sudo apt-get update
+   sudo apt-get install apache2 -y
+   sudo service apache2 restart
+   sudo chmod 777 /var/www/html -R
+   echo '<!doctypehtml><html><body><h1>go-bruins! this is instance number 1</h1></body></html>' | tee /var/www/html/index.html
   ```
 
 #### Instance 2
@@ -66,15 +67,16 @@ You will be prompted to create a google account to use, and you will need to cre
    * **Region:** us-central1 
    * **Zone:** us-central1-b 
    * **OS image:** Debian GNU/Linux 
-   * Add a networking tag of **my_ucla_team_name-tag** 
+   * Under **Advanced Options**, **Networking**, add a networking tag of **my_ucla_name_tag** under the Network tags section
    * Under **Advanced Options**, **Management**, paste this startup script under the **Automation** section: 
 
   ```bash
-  #! /bin/bash 
-  sudo apt-get update 
-  sudo apt-get install apache2 -y 
-  sudo service apache2 restart 
-  echo '<!doctypehtml><html><body><h1>Hello! You've reached the second UCLA instance!</h1></body></html>' | tee /var/www/html/index.html 
+   #! /bin/bash
+   sudo apt-get update
+   sudo apt-get install apache2 -y
+   sudo service apache2 restart
+   sudo chmod 777 /var/www/html -R
+   echo '<!doctypehtml><html><body><h1>go-bruins! this is instance number 2</h1></body></html>' | tee /var/www/html/index.html
    ```
 
 
@@ -88,27 +90,29 @@ Navigate to the Firewall page by typying 'Firewall' in the search bar:
 
 3. Create firewall rule: 
    * **Name:** my_UCLA_team_name
-   * **-firewall Targets:** Specified target tags Target tags: my-UCLA-team-name-tag
+   * **-firewall Targets:** Specified target tags Target tags: **my_ucla_name_tag**
    * **Source filter:** IPv4 ranges 
    * Set the **Source IPv4 ranges** to 0.0.0.0/0, which allows traffic from any source. 
    * For specified protocols and ports, select **TCP** and enter **80**. 
-   * NOTE: It may take a few minutes for the Console to display the new firewall rule or refresh to see the rule. 
+   * NOTE: It may take a few minutes for the Console to display the new firewall rule or refresh to see the rule.
+  
+   * NOTE: Your compute instances are launched with a **default-allow-ssh** rule. As a security best practice, this should be deleted. Go to **Firewall > Policies > Delete default-allow-ssh**
 
 
 ## 4. Create the Load Balancer <a name="load-balancer"></a>
 
 * Click the Navigation menu, located in the top left-hand side.
 * Select Network services > Load balancing.
-* Click Create Load Balancer.
-* Click Start Configuration for the TCP Load Balancing option.
+* Click Create Network Load Balancer.
+* Click Start Configuration for the Network Load Balancer (TCP/SSL)
 * Select From Internet to my VMs.
 * Select Single region only.
-* Select Target Pool or Target Instance.
+* Select Target Instance.
 * Click Continue.
-* Enter the following information: Name: my_UCLA_team_name-lb Region: us-central1 (Iowa)
-* Select Backend configuration.
+* Enter the following information: Name: my-ucla-lb Region: us-central1 (Iowa)
+* Select Backend configuration. Selected Network Service Tier = Standard
 * Click Select Existing Instances.
-* For VM instances, select my-UCLA-team-name-1(us-central1-b) and my-UCLA-team-name-2(us-central1-b). Click OK.
+* For VM instances, select my-ucla-instance-1(us-central1-b) and my-ucla-instance-2(us-central1-b). Click OK.
 * Select Frontend configuration.
 * For Name, enter my-UCLA-team-name-fe.
 * For IP address, select Create IP Address.
@@ -118,7 +122,7 @@ Navigate to the Firewall page by typying 'Firewall' in the search bar:
 * Click Done.
 * Click Review and finalize (optional).
 * Click Create.
-* Click the my-UCLA-team-name-lb, then choose EDIT.
+* Click the my-ucla-lb then choose EDIT.
 * Under the Backend configuration in the Health check section, choose CREATE A HEALTH CHECK.
 * Enter the following information: Name: health Protocol: HTTP Port: 80.
 * Keep the given defaults for Health criteria.
@@ -128,7 +132,7 @@ Navigate to the Firewall page by typying 'Firewall' in the search bar:
 
 ## 5. Send Traffic to Your Compute Instances <a name="send-traffic"></a>
 
-a. Copy the IP address and place it in the URL, you will then see either my-UCLA-team-name-1 or my-UCLA-team-name-2 displayed. This will confirm your traffic is being served the instance webpages. 
+a. Copy the IP address and place it in the URL, you will then see either **"go-bruins! this is instance number 1"** or **"go-bruins! this is instance number 22 displayed"**. This will confirm your traffic is being served the instance webpages. 
 
 b. Open Cloud Shell and execute command while true; do curl -m1 IP_ADDRESS; done. This will show that both of your servers are serving the application traffic to your end users. 
 
