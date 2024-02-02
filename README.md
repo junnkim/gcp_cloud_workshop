@@ -52,13 +52,13 @@ You will be prompted to create a google account to use, and you will need to cre
    * Under **Advanced Options**, **Networking**, add a networking tag of **my_ucla_name_tag** under the Network tags section
    * Under **Advanced Options**, **Management**, paste this startup script under the **Automation** section: 
 
-  ```bash
-   #! /bin/bash
-   sudo apt-get update
-   sudo apt-get install apache2 -y
-   sudo service apache2 restart
-   sudo chmod 777 /var/www/html -R
-   echo '<!doctypehtml><html><body><h1>go-bruins! this is instance number 1</h1></body></html>' | tee /var/www/html/index.html
+  ```
+  #! /bin/bash
+  sudo apt-get update
+  sudo apt-get install apache2 -y
+  sudo service apache2 restart
+  sudo chmod 777 /var/www/html -R
+  echo '<!doctypehtml><html><body><h1>go-bruins! this is instance number 1</h1></body></html>' | tee /var/www/html/index.html
   ```
 
 #### Instance 2
@@ -71,15 +71,14 @@ You will be prompted to create a google account to use, and you will need to cre
    * Under **Advanced Options**, **Networking**, add a networking tag of **my_ucla_name_tag** under the Network tags section
    * Under **Advanced Options**, **Management**, paste this startup script under the **Automation** section: 
 
-  ```bash
-   #! /bin/bash
-   sudo apt-get update
-   sudo apt-get install apache2 -y
-   sudo service apache2 restart
-   sudo chmod 777 /var/www/html -R
-   echo '<!doctypehtml><html><body><h1>go-bruins! this is instance number 2</h1></body></html>' | tee /var/www/html/index.html
-   ```
-
+  ```
+  #! /bin/bash
+  sudo apt-get update
+  sudo apt-get install apache2 -y
+  sudo service apache2 restart
+  sudo chmod 777 /var/www/html -R
+  echo '<!doctypehtml><html><body><h1>go-bruins! this is instance number 2</h1></body></html>' | tee /var/www/html/index.html
+  ```
 
 ## 3. Add a Firewall Rule <a name="firewall-rule"></a>
 
